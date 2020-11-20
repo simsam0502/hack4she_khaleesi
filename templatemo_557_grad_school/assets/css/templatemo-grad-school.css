@@ -1,5 +1,5 @@
 /*
-    
+
 TemplateMo 557 Grad School
 
 https://templatemo.com/tm-557-grad-school
@@ -132,7 +132,7 @@ a.menu-link { display: none; }
   nav[role="navigation"] li.active a {
       color: #f5a425;
   }
-  
+
   @media screen and (min-width: 951px) {
     .js nav[role="navigation"] {
       max-height: none;
@@ -404,7 +404,7 @@ section.features .col-4 {
   width: 100%;
   background-color: #0c1228;
   color: #fff;
-  padding: 40px;
+  padding: 35px;
 }
 
 .features-content:hover {
@@ -419,6 +419,7 @@ section.features .col-4 {
     color: #fff;
     letter-spacing: 1px;
     margin-bottom: 0px;
+    text-align:center;
 }
 
 .features-content h4 i {
@@ -596,7 +597,7 @@ section.why-us {
 }
 
 @media screen and (max-width: 767px) {
-  
+
   .tabs-content {
       text-align: center;
   }
@@ -1461,7 +1462,7 @@ section.contact form {
 }
 
 
-@media screen and (max-width: 767px) {  
+@media screen and (max-width: 767px) {
   section.contact form {
       margin-bottom: 30px;
   }
