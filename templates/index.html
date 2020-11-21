@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+  <title>Grad School HTML5 Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css' )}}" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/fontawesome.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/templatemo-grad-school.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/owl.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/lightbox.css')}}">
+  <!--
+
+TemplateMo 557 Grad School
+
+https://templatemo.com/tm-557-grad-school
+
+-->
+</head>
+
+<body>
+
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="/"><em>Grad</em> School</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="/">Home</a></li>
+        <li class="has-submenu"><a href="">Courses</a>
+          <ul class="sub-menu">
+            <li><a href="/educourses">Educational Courses</a></li>
+            <li><a href="/skillcourses">Skill-based Courses</a></li>
+
+          </ul>
+        </li>
+        <li class="has-submenu"><a href="">Jobs</a>
+          <ul class="sub-menu">
+            <li><a href="/edujobs">Educational Jobs</a></li>
+            <li><a href="/skilljobs">Skill-based <br> Jobs</a></li>
+
+          </ul>
+        </li>
+        <li><a href="/aboutus">About Us</a></li>
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="#section6">Contact</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+    <video autoplay muted loop id="bg-video">
+      <source src="{{ url_for('static', filename='assets/images/course-video.mp4')}}" type="video/mp4" />
+    </video>
+
+    <div class="video-overlay header-text">
+      <div class="caption">
+        <h6>Graduate School of Management</h6>
+        <h2><em>Your</em> Classroom</h2>
+        <div class="main-button">
+          <div class="scroll-to-section"><a href="#section2">Discover more</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+  <!--This section done-->
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-12">
+          <div class="features-post">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><a href="/educourses"><i class="fa fa-graduation-cap"></i>Educational Courses</a></h4>
+              </div>
+              <div class="content-hide">
+                <p>Girls has the same right to education as boys. Educated girls can make informed choices - and from a
+                  far better range of options. Educating girls saves lives and builds stronger families, communities and
+                  economies. An educated female population increases a country's productivity and fuels economic growth
+                </p>
+                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a
+                  posuere imperdiet.</p>
+                <div class="scroll-to-section"><a href="educourses.html">More Info.</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-12">
+          <div class="features-post">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><a href="/skillcourses"><i class="fa fa-paint-brush"></i>Skill-based Courses</a></h4>
+              </div>
+              <div class="content-hide">
+                <p>Skill development is a key to improve employability and income-earning opportunities for women and
+                  for enhancing sustainable rural development and livelihoods. Social outcomes are reflected in
+                  indicators of income inequality and poverty.</p>
+                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a
+                  posuere imperdiet.</p>
+                <div class="scroll-to-section"><a href="skillcourses.html">More Info.</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-12">
+          <div class="features-post second-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><a href="/edujobs"><i class="fa fa-laptop"></i>Educational Jobs</a></h4>
+              </div>
+              <div class="content-hide">
+                <p>The families of working women are also able to enjoy a higher quality of living due to additional
+                  income. At the macro level, greater participation of women in the workforce is good for the overall
+                  economy.</p>
+                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a
+                  posuere imperdiet.</p>
+                <div class="scroll-to-section"><a href="edujobs.html">Details</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-12">
+          <div class="features-post third-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><a href="/skilljobs"><i class="fa fa-cogs"></i>Skill-based Jobs</a></h4>
+              </div>
+              <div class="content-hide">
+                <p>Having women in the skilled trades is very important to close the oncoming labour gap and create a
+                  welcoming environment for future generations of skilled labour.</p>
+                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a
+                  posuere imperdiet.</p>
+                <div class="scroll-to-section"><a href="skilljobs.html">Read More</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Till here-->
+  <section class="section why-us" data-section="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Why <span style="color:#FC3 ;">EDUCATION</span> and <span style="color:#FC3 ;">EMPLOYMENT</span> is a necessity for women?</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id='tabs'>
+            <ul>
+              <li><a href='#tabs-1'>Self-Reliance</a></li>
+              <li><a href='#tabs-2'>Prevents Social Exclusion</a></li>
+              <li><a href='#tabs-3'>Elimination of Crime against women</a></li>
+            </ul>
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{{ url_for('static', filename='assets/images/independent.jpg')}}" style="width: 90%;" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Self-Reliance</h4>
+                    <p>Education is vital for women as it makes women become self-reliant and eliminates her need to depend on a third person for her and her family’s survival.
+
+                      She becomes aware of her rights and employment on an equal plank with men and fends her family’s needs. Financially independent women raise her voice against prevailing old social customs and injustices.</p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-2'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{{ url_for('static', filename='assets/images/social.jpg')}}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Prevents Social Exclusion</h4>
+                    <p>An uneducated female child or woman is likely to work as domestic help or in extreme cases, become a victim of flesh trade, over the opposite gender. Women who spend their life as domestic help or any other menial jobs often
+                      get secluded from society.
+
+                      The seclusion or exclusion of women by society leads to physical as well as psychological traumas and ailments. An educated woman brews a balanced society.</p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-3'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{{ url_for('static', filename='assets/images/crime.jpg')}}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Elimination of Crime against women</h4>
+                    <p>Social customs such as Sati, Dowry, Female infanticide, Flesh Trade, and other harmful customary practices can be eradicated through female education.
+
+                      An educated woman is pivotal in a civilized society and influences the beliefs and thoughts of its members. She stands up for the injustice pitted against women in the family or society against other girls or women.</p>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section coming-soon" data-section="section3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-xs-12">
+          <div class="continer centerIt">
+            <div>
+              <h4>Take <em>any online course</em> and win $326 for your next class</h4>
+              <div class="counter">
+
+                <div class="days">
+                  <div class="value">00</div>
+                  <span>Days</span>
+                </div>
+
+                <div class="hours">
+                  <div class="value">00</div>
+                  <span>Hours</span>
+                </div>
+
+                <div class="minutes">
+                  <div class="value">00</div>
+                  <span>Minutes</span>
+                </div>
+
+                <div class="seconds">
+                  <div class="value">00</div>
+                  <span>Seconds</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="right-content">
+            <div class="top-content">
+              <h6>Register your free account and <em>get immediate</em> access to online courses</h6>
+            </div>
+            <form id="contact" action="" method="get">
+              <div class="row">
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Your Phone Number" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="button">Get it now</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Till here-->
+  <section class="section contact" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Let’s Keep In Touch</h2>
+          </div>
+        </div>
+      </div>
+      <!-- Do you need a working HTML contact-form script?
+
+                    Please visit https://templatemo.com/contact page -->
+      <div class="col-md-6" style="margin-left:auto; margin-right:auto;">
+
+        <form id="contact" action="" method="post">
+          <div class="row">
+            <div class="col-6">
+              <fieldset>
+                <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+              </fieldset>
+            </div>
+            <div class="col-6">
+              <fieldset>
+                <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+              </fieldset>
+            </div>
+         </div>
+          <fieldset>
+            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+          </fieldset>
+          <fieldset>
+            <button type="submit" id="form-submit" class="button">Send Message Now</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p><i class="fa fa-copyright"></i> Copyright 2020 by Grad School
+
+            | Design: <a href="https://templatemo.com" rel="sponsored" target="_parent">TemplateMo</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/js/isotope.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/js/owl-carousel.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/js/lightbox.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/js/tabs.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/js/video.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/js/slick-slider.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/js/custom.js')}}"></script>
+  
+</body>
+
+</html>

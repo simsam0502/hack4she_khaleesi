@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+  <title>Grad School HTML5 Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css' )}}" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/fontawesome.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/templatemo-grad-school.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/owl.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/lightbox.css')}}">
+  <!--
+
+TemplateMo 557 Grad School
+
+https://templatemo.com/tm-557-grad-school
+
+-->
+</head>
+
+<body>
+
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="/"><em>Grad</em> School</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="/">Home</a></li>
+        <li class="has-submenu"><a href="">Courses</a>
+          <ul class="sub-menu">
+            <li><a href="/educourses">Educational Courses</a></li>
+            <li><a href="/skillcourses">Skill-based Courses</a></li>
+
+          </ul>
+        </li>
+        <li class="has-submenu"><a href="">Jobs</a>
+          <ul class="sub-menu">
+            <li><a href="/edujobs">Educational Jobs</a></li>
+            <li><a href="/skilljobs">Skill-based <br> Jobs</a></li>
+
+          </ul>
+        </li>
+        <li><a href="#section5">About Us</a></li>
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="#section6">Contact</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+    <video autoplay muted loop id="bg-video">
+      <source src="{{ url_for('static', filename='assets/images/course-video.mp4')}}" type="video/mp4" />
+    </video>
+
+    <div class="video-overlay header-text">
+      <div class="caption">
+        <h6>Graduate School of Management</h6>
+        <h2><em>Your</em> Classroom</h2>
+        <div class="main-button">
+          <div class="scroll-to-section"><a href="#section2">Discover more</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--This section done-->
+  <section class="section video" data-section="section5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <div class="left-content">
+            <span>About Us</span>
+            <h4>We are an <em>online education-cum-employment-providing platform for women</em></h4>
+            <p>Our vision is to provide quality academical and skill-based education to all women around the world and
+              to provide job opportunities.
+              <br><br>It is an attempt to connect passionate volunteers to teach women and companies looking for women
+              workforce.
+            </p>
+            <div class="main-button"><a rel="nofollow" href="https://fb.com/templatemo" target="_parent">Volunteer</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <figure>
+            <img src="https://images.yourstory.com/cs/wordpress/2016/06/women-empowerment.jpg" width="600px" height="400px" style="margin-top:50px;">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Till here-->
+  <section class="section contact" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Let’s Keep In Touch</h2>
+          </div>
+        </div>
+      </div>
+      <!-- Do you need a working HTML contact-form script?
+
+                    Please visit https://templatemo.com/contact page -->
+      <div class="col-md-6" style="margin-left:auto; margin-right:auto;">
+
+        <form id="contact" action="" method="post">
+          <div class="row">
+            <div class="col-6">
+              <fieldset>
+                <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+              </fieldset>
+            </div>
+            <div class="col-6">
+              <fieldset>
+                <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+              </fieldset>
+            </div>
+         </div>
+          <fieldset>
+            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+          </fieldset>
+          <fieldset>
+            <button type="submit" id="form-submit" class="button">Send Message Now</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p><i class="fa fa-copyright"></i> Copyright 2020 by Grad School
+
+            | Design: <a href="https://templatemo.com" rel="sponsored" target="_parent">TemplateMo</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/js/isotope.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/js/owl-carousel.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/js/lightbox.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/js/tabs.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/js/video.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/js/slick-slider.js')}}"></script>
+  <script src="{{ url_for('static', filename='assets/js/custom.js')}}"></script>
+</body>
+</html>
