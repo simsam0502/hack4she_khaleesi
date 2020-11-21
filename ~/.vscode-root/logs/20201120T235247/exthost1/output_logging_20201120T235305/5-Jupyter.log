@@ -1,0 +1,12 @@
+Error 2020-11-20 23:53:06: Jupyter Extension (Error in Failed to update settings.json, method:fixSettingsFile): [EntryNotFound (FileSystemError): Unable to read file '/root/hack4she_khaleesi/.vscode/settings.json' (EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/root/hack4she_khaleesi/.vscode/settings.json')
+	at _handleError (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:730:838)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+	at async m.readFile (/root/.vscode/extensions/ms-toolsai.jupyter-2020.11.372831992/out/client/extension.js:49:824323)
+	at async g.fixSettingsFile (/root/.vscode/extensions/ms-toolsai.jupyter-2020.11.372831992/out/client/extension.js:47:291968)] {
+  code: 'FileNotFound',
+  name: 'EntryNotFound (FileSystemError)'
+}
+> /usr/bin/python ~/.vscode/extensions/ms-toolsai.jupyter-2020.11.372831992/pythonFiles/pyvsc-run-isolated.py -c "import jupyter"
+> /usr/bin/python ~/.vscode/extensions/ms-toolsai.jupyter-2020.11.372831992/pythonFiles/pyvsc-run-isolated.py -c "import jupyter"
+> /usr/bin/python ~/.vscode/extensions/ms-toolsai.jupyter-2020.11.372831992/pythonFiles/pyvsc-run-isolated.py -c "import notebook"
+> /usr/bin/python ~/.vscode/extensions/ms-toolsai.jupyter-2020.11.372831992/pythonFiles/pyvsc-run-isolated.py -c "import notebook"
