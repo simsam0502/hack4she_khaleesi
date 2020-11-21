@@ -19,12 +19,14 @@ class courses(db.Model):
     loc1=db.Column('loc1',db.Text)
     loc2=db.Column('loc2',db.Text)
     cardtext=db.Column('cardtext',db.Text)
+    link=db.Column('link',db.Text)
     field=db.Column('field',db.Text)
-    def _init_(self,ID,headline,loc1,loc2,cardtext,field):
+    def _init_(self,ID,headline,loc1,loc2,link,cardtext,field):
         self.ID=ID
         self.headline=headline
         self.loc1=loc1
         self.loc2=loc2
+        self.link=link
         self.cardtext=cardtext
         self.field=field
 def allowed_file(filename):
@@ -92,8 +94,9 @@ def addcourse():
 
         headline=request.form.get("headline")
         cardtext=request.form.get("cardtext")
+        link=request.form.get("link")        
         field=request.form.get("field")
-        course=courses(headline=headline,loc1=loc1,loc2=loc2,cardtext=cardtext,field=field)
+        course=courses(headline=headline,loc1=loc1,loc2=loc2,link=link,cardtext=cardtext,field=field)
         db.session.add(course)
         db.session.commit()
         #print(intro)

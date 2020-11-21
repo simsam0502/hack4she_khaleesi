@@ -15,7 +15,6 @@
   <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css' )}}" rel="stylesheet">
 
   <!-- Additional CSS Files -->
-  {{ url_for('static', filename='CSS/styles.css') }}
   <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/fontawesome.css')}}">
   <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/templatemo-grad-school.css')}}">
   <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/owl.css')}}">
@@ -42,15 +41,15 @@ https://templatemo.com/tm-557-grad-school
         <li><a href="#section1">Home</a></li>
         <li class="has-submenu"><a href="">Courses</a>
           <ul class="sub-menu">
-            <li><a href="educourses.html">Educational Courses</a></li>
-            <li><a href="skillcourses.html">Skill-based Courses</a></li>
+            <li><a href="/educourses">Educational Courses</a></li>
+            <li><a href="/skillcourses">Skill-based Courses</a></li>
 
           </ul>
         </li>
         <li class="has-submenu"><a href="">Jobs</a>
           <ul class="sub-menu">
-            <li><a href="edujobs.html">Educational Jobs</a></li>
-            <li><a href="skilljobs.html">Skill-based <br> Jobs</a></li>
+            <li><a href="/edujobs">Educational Jobs</a></li>
+            <li><a href="/skilljobs">Skill-based <br> Jobs</a></li>
 
           </ul>
         </li>
@@ -65,7 +64,7 @@ https://templatemo.com/tm-557-grad-school
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
     <video autoplay muted loop id="bg-video">
-      <source src="assets/images/course-video.mp4" type="video/mp4" />
+      <source src="{{ url_for('static', filename='assets/images/course-video.mp4')}}" type="video/mp4" />
     </video>
 
     <div class="video-overlay header-text">
@@ -88,7 +87,7 @@ https://templatemo.com/tm-557-grad-school
           <div class="features-post">
             <div class="features-content">
               <div class="content-show">
-                <h4><a href="educourses.html"><i class="fa fa-graduation-cap"></i>Educational Courses</a></h4>
+                <h4><a href="/educourses"><i class="fa fa-graduation-cap"></i>Educational Courses</a></h4>
               </div>
               <div class="content-hide">
                 <p>Girls has the same right to education as boys. Educated girls can make informed choices - and from a
@@ -106,7 +105,7 @@ https://templatemo.com/tm-557-grad-school
           <div class="features-post">
             <div class="features-content">
               <div class="content-show">
-                <h4><a href="skillcourses.html"><i class="fa fa-paint-brush"></i>Skill-based Courses</a></h4>
+                <h4><a href="/skillcourses"><i class="fa fa-paint-brush"></i>Skill-based Courses</a></h4>
               </div>
               <div class="content-hide">
                 <p>Skill development is a key to improve employability and income-earning opportunities for women and
@@ -123,7 +122,7 @@ https://templatemo.com/tm-557-grad-school
           <div class="features-post second-features">
             <div class="features-content">
               <div class="content-show">
-                <h4><a href="edujobs.html"><i class="fa fa-laptop"></i>Educational Jobs</a></h4>
+                <h4><a href="/edujobs"><i class="fa fa-laptop"></i>Educational Jobs</a></h4>
               </div>
               <div class="content-hide">
                 <p>The families of working women are also able to enjoy a higher quality of living due to additional
@@ -140,7 +139,7 @@ https://templatemo.com/tm-557-grad-school
           <div class="features-post third-features">
             <div class="features-content">
               <div class="content-show">
-                <h4><a href="skilljobs.html"><i class="fa fa-cogs"></i>Skill-based Jobs</a></h4>
+                <h4><a href="/skilljobs"><i class="fa fa-cogs"></i>Skill-based Jobs</a></h4>
               </div>
               <div class="content-hide">
                 <p>Having women in the skilled trades is very important to close the oncoming labour gap and create a
@@ -175,7 +174,7 @@ https://templatemo.com/tm-557-grad-school
               <article id='tabs-1'>
                 <div class="row">
                   <div class="col-md-6">
-                    <img src="assets/images/independent.jpg" style="width: 90%;" alt="">
+                    <img src="{{ url_for('static', filename='assets/images/independent.jpg')}}" style="width: 90%;" alt="">
                   </div>
                   <div class="col-md-6">
                     <h4>Self-Reliance</h4>
@@ -188,7 +187,7 @@ https://templatemo.com/tm-557-grad-school
               <article id='tabs-2'>
                 <div class="row">
                   <div class="col-md-6">
-                    <img src="assets/images/social.jpg" alt="">
+                    <img src="{{ url_for('static', filename='assets/images/social.jpg')}}" alt="">
                   </div>
                   <div class="col-md-6">
                     <h4>Prevents Social Exclusion</h4>
@@ -202,7 +201,7 @@ https://templatemo.com/tm-557-grad-school
               <article id='tabs-3'>
                 <div class="row">
                   <div class="col-md-6">
-                    <img src="assets/images/crime.jpg" alt="">
+                    <img src="{{ url_for('static', filename='assets/images/crime.jpg')}}" alt="">
                   </div>
                   <div class="col-md-6">
                     <h4>Elimination of Crime against women</h4>
