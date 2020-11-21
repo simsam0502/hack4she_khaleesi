@@ -37,9 +37,9 @@ password="kuchbhi@1234"
 @app.route('/')
 def home():
     return render_template('index.html')
-@app.route('/home')
-def homee():
-    return render_template('index.html')
+@app.route('/addcourse')
+def addcourse():
+    return render_template('form.html')
 @app.route('/aboutus')
 def aboutus():
     return render_template('aboutus.html')
