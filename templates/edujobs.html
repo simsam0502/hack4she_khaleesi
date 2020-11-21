@@ -31,35 +31,48 @@ https://templatemo.com/tm-557-grad-school
 
 <body>
 
-
-    <!--header-->
-  <header class="main-header clearfix" role="header">
-    <div class="logo">
-      <a href="#"><em>Grad</em> School</a>
-    </div>
-    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
-    <nav id="menu" class="main-nav" role="navigation">
-      <ul class="main-menu">
-        <li><a href="/index">Home</a></li>
-        <li class="has-submenu"><a href="">Courses</a>
-          <ul class="sub-menu">
-            <li><a href="/educourses">Educational Courses</a></li>
-            <li><a href="/skillcourses">Skill-based Courses</a></li>
-
+    <header class="main-header clearfix" role="header">
+        <div class="logo">
+          <a href="#"><em>Grad</em> School</a>
+        </div>
+        <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+        <nav id="menu" class="main-nav" role="navigation">
+          <ul class="main-menu">
+            <li><a href="/index">Home</a></li>
+            <li class="has-submenu"><a href="">Courses</a>
+              <ul class="sub-menu">
+                <li><a href="/educourses">Educational Courses</a></li>
+                <li><a href="/skillcourses">Skill-based Courses</a></li>
+    
+              </ul>
+            </li>
+            <li class="has-submenu"><a href="">Jobs</a>
+              <ul class="sub-menu">
+                <li><a href="/edujobs">Educational Jobs</a></li>
+                <li><a href="/skilljobs">Skill-based <br> Jobs</a></li>
+    
+              </ul>
+            </li>
+           
+    
           </ul>
-        </li>
-        <li class="has-submenu"><a href="">Jobs</a>
-          <ul class="sub-menu">
-            <li><a href="/edujobs">Educational Jobs</a></li>
-            <li><a href="/skilljobs">Skill-based <br> Jobs</a></li>
-
-          </ul>
-        </li>
-       
-
-      </ul>
-    </nav>
-  </header>
+        </nav>
+      </header>
+        <section class="section main-banner" id="top" data-section="section1">
+            <video autoplay muted loop id="bg-video">
+                <source src="{{ url_for('static', filename='assets/images/course-video.mp4')}}" type="video/mp4" />
+            </video>
+    
+            <div class="video-overlay header-text">
+                <div class="caption">
+                    <h6>Graduate School of Management</h6>
+                    <h2><em>Your</em> Classroom</h2>
+                    <div class="main-button">
+                        <div class="scroll-to-section"><a href="#section2">Discover more</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
   <section class="section courses" data-section="section4">
     <div class="container-fluid">
         <div class="row">
