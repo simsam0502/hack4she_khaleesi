@@ -43,7 +43,8 @@ def homee():
 
 @app.route('/educourses')
 def educourses():
-    course = courses.query.filter_by(field="educourse")
+    course = courses.query.filter_by(field="educourses")
+    print(course)
     return render_template('educourses.html', courses=course)
 
 @app.route('/edujobs')
