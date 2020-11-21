@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Form</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='form.css')}}" >
+        <script src="{{ url_for('static', filename='form.js')}}"></script>
+    </head>
+    <body >
+        <style>
+            body{
+                background-image: url(assets/images/choosing-bg.jpg);
+            }
+        </style>
+        <div class="container">
+            <div id="form-main">
+                <div id="form-div">
+                    <form class="montform" id="reused_form" enctype=&quot;multipart/form-data&quot; >
+                        <p class="name">
+                            <input name="name" type="text" class="feedback-input" required placeholder="Job/Course Name" id="name" />
+                        </p>
+                        
+                        <p class="text">
+                            <textarea name="message" class="feedback-input" id="comment" placeholder="Intro of Job/Course"></textarea>
+                        </p>
+                        <p class="link">
+                            <input name="link" type="email" required class="feedback-input" id="link" placeholder="Link for your course/job" />
+                        </p>
+                         <p >
+             <label ></label>
+             <select id = "mylist" class="feedback-input" required placeholder="Select Field">
+             	
+                <option value = "0">Select Field</option>
+               <option value = "1">Educational Courses</option>
+               <option value = "2">Skill-based courses</option>
+               <option value = "3">Educational Jobs</option>
+               <option value = "4">Skill-based Jobs</option>
+             </select>
+          </p>
+                        <p class="file">
+                            <input name="image" type="file" id="file" class="feedback-input">
+                        </p>
+                        <p class="file">
+                            <input name="image" type="file" id="file" class="feedback-input">
+                        </p>
+                        <div class="submit">
+                            <button type="submit" class="button-blue">SUBMIT</button>
+                            <div class="ease"></div>
+                        </div>
+                    </form>
+                    <div id="error_message" style="width:100%; height:100%; display:none; ">
+                        <h4>
+                            Error
+                        </h4>
+                        Sorry there was an error sending your form. 
+                    </div>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h2>Success! Your Message was Sent Successfully.</h2> </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
