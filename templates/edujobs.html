@@ -86,54 +86,69 @@
         </div>
     </div>
 </section>
-<section class="section courses" data-section="section4">
-    <div class="container-fluid">
-        <div class="row">
-            
-            <div class="owl-carousel owl-theme">
-                {% for course in courses %}
-                    <div class="item">
-                        <img src="{{course.loc1}}" alt="Course #2">
-                        <div class="down-content">
-                            <a href="{{course.link}}"><h4>{{course.headline}}</h4></a>
-                            <p>{{course.cardtext}}</p>
-                            <div class="author-image">
-                                <img src="{{course.loc2}}" alt="Author 2">
-                            </div>
-                            <div class="text-button-free">
-                                <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                   {% endfor %}
-            </div>
+  <!--This section done-->
+  <section class="section contact" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Add Your Courses/Jobs</h2>
+          </div>
         </div>
-    </div>
-</section>
-<section class="section courses" data-section="section4">
-    <div class="container-fluid">
-        <div class="row">
-            
-            <div class="owl-carousel owl-theme">
-                {% for course in courses %}
-                    <div class="item">
-                        <img src="{{course.loc1}}" alt="Course #2">
-                        <div class="down-content">
-                            <a href="{{course.link}}"><h4>{{course.headline}}</h4></a>
-                            <p>{{course.cardtext}}</p>
-                            <div class="author-image">
-                                <img src="{{course.loc2}}" alt="Author 2">
-                            </div>
-                            <div class="text-button-free">
-                                <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                   {% endfor %}
+      </div>
+    
+      <div class="col-md-6" style="margin-left:auto; margin-right:auto;">
+
+        <form id="contact" action="/addcourse" enctype=multipart/form-data method="post">
+          <div class="row">
+            <div class="col-6">
+              <fieldset>
+                <input name="headline" type="text" class="form-control" id="headline" placeholder="Job/Course Name" required="">
+              </fieldset>
             </div>
-        </div>
+            <div class="col-6">
+              <fieldset>
+                <input name="link" type="text" class="form-control" id="link" placeholder="Link to your Course/Job" required="">
+              </fieldset>
+            </div>
+         </div>
+          <fieldset>
+            <textarea name="cardtext" rows="6" class="form-control" id="cardtext" placeholder="Intro to your Job/Course" required=""></textarea>
+          </fieldset>
+          <fieldset>
+            <label style="color: aliceblue;">Choose a Field</label>
+            <select id="" name="field">
+              <option value="educourses">Educational Courses</option>
+              <option value="skillcourses">Skill-based Courses</option>
+              <option value="edujobs">Educational Jobs</option>
+              <option value="skilljobs">Skill-based Jobs</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <input name="img1" type="file" class="form-control" id="img2" placeholder="Course/Job image" required="">
+          </fieldset>
+          <fieldset>
+            <input name="img2" type="file" class="form-control" id="img2" placeholder="Author image" required="">
+          </fieldset>
+
+          <fieldset>
+            <button type="submit" id="form-submit" class="button">Submit</button>
+          </fieldset>
+        </form>
+      </div>
     </div>
-</section>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p><i class="fa fa-copyright"></i> Copyright 2020 by E-SAKHI
+        </div>
+      </div>
+    </div>
+  </footer>
+
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
     <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
