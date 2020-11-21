@@ -48,7 +48,7 @@ def educourses():
 
 @app.route('/edujobs')
 def edujobs():
-    article = courses.query.filter_by(field="edujobs")
+    course = courses.query.filter_by(field="edujobs")
     return render_template('edujobs.html', courses=course)
 
 
