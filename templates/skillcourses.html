@@ -13,13 +13,13 @@
     <title>Grad School HTML5 Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/fontawesome.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/templatemo-grad-school.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/owl.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/lightbox.css')}}">
     <!--
 
 TemplateMo 557 Grad School
@@ -40,18 +40,18 @@ https://templatemo.com/tm-557-grad-school
     <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
     <nav id="menu" class="main-nav" role="navigation">
       <ul class="main-menu">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="/index">Home</a></li>
         <li class="has-submenu"><a href="">Courses</a>
           <ul class="sub-menu">
-            <li><a href="educourses.html">Educational Courses</a></li>
-            <li><a href="skillcourses.html">Skill-based Courses</a></li>
+            <li><a href="/educourses">Educational Courses</a></li>
+            <li><a href="/skillcourses">Skill-based Courses</a></li>
 
           </ul>
         </li>
         <li class="has-submenu"><a href="">Jobs</a>
           <ul class="sub-menu">
-            <li><a href="edujobs.html">Educational Jobs</a></li>
-            <li><a href="skilljobs.html">Skill-based <br> Jobs</a></li>
+            <li><a href="/edujobs">Educational Jobs</a></li>
+            <li><a href="/skilljobs">Skill-based <br> Jobs</a></li>
 
           </ul>
         </li>
@@ -62,7 +62,7 @@ https://templatemo.com/tm-557-grad-school
   </header>
     <section class="section main-banner" id="top" data-section="section1">
         <video autoplay muted loop id="bg-video">
-            <source src="assets/images/course-video.mp4" type="video/mp4" />
+            <source src="{{ url_for('static', filename='assets/images/course-video.mp4')}}" type="video/mp4" />
         </video>
 
         <div class="video-overlay header-text">
@@ -328,16 +328,16 @@ https://templatemo.com/tm-557-grad-school
     </section>
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/tabs.js"></script>
-    <script src="assets/js/video.js"></script>
-    <script src="assets/js/slick-slider.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="{{ url_for('static', filename='assets/js/isotope.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/js/owl-carousel.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/js/lightbox.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/js/tabs.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/js/video.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/js/slick-slider.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/js/custom.js')}}"></script>
     <script>
         //according to loftblog tut
         $('.nav li:first').addClass('active');
