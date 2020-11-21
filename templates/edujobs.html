@@ -33,12 +33,12 @@ https://templatemo.com/tm-557-grad-school
 
     <header class="main-header clearfix" role="header">
         <div class="logo">
-          <a href="#"><em>Grad</em> School</a>
+          <a href="/"><em>Grad</em> School</a>
         </div>
         <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
         <nav id="menu" class="main-nav" role="navigation">
           <ul class="main-menu">
-            <li><a href="/index">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li class="has-submenu"><a href="">Courses</a>
               <ul class="sub-menu">
                 <li><a href="/educourses">Educational Courses</a></li>
@@ -152,57 +152,6 @@ https://templatemo.com/tm-557-grad-school
     <script src="{{ url_for('static', filename='assets/js/video.js')}}"></script>
     <script src="{{ url_for('static', filename='assets/js/slick-slider.js')}}"></script>
     <script src="{{ url_for('static', filename='assets/js/custom.js')}} "></script>
-    <script>
-        //according to loftblog tut
-        $('.nav li:first').addClass('active');
-
-        var showSection = function showSection(section, isAnimate) {
-            var
-                direction = section.replace(/#/, ''),
-                reqSection = $('.section').filter('[data-section="' + direction + '"]'),
-                reqSectionPos = reqSection.offset().top - 0;
-
-            if (isAnimate) {
-                $('body, html').animate({
-                    scrollTop: reqSectionPos
-                },
-                    800);
-            } else {
-                $('body, html').scrollTop(reqSectionPos);
-            }
-
-        };
-
-        var checkSection = function checkSection() {
-            $('.section').each(function () {
-                var
-                    $this = $(this),
-                    topEdge = $this.offset().top - 80,
-                    bottomEdge = topEdge + $this.height(),
-                    wScroll = $(window).scrollTop();
-                if (topEdge < wScroll && bottomEdge > wScroll) {
-                    var
-                        currentId = $this.data('section'),
-                        reqLink = $('a').filter('[href*=\\#' + currentId + ']');
-                    reqLink.closest('li').addClass('active').
-                        siblings().removeClass('active');
-                }
-            });
-        };
-
-        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
-            if ($(e.target).hasClass('external')) {
-                return;
-            }
-            e.preventDefault();
-            $('#menu').removeClass('active');
-            showSection($(this).attr('href'), true);
-        });
-
-        $(window).scroll(function () {
-            checkSection();
-        });
-    </script>
 
 </body>
 

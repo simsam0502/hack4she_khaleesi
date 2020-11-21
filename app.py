@@ -40,6 +40,9 @@ def home():
 @app.route('/home')
 def homee():
     return render_template('index.html')
+@app.route('/aboutus')
+def aboutus():
+    return render_template('aboutus.html')
 
 @app.route('/educourses')
 def educourses():
